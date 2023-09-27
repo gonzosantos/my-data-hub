@@ -1,0 +1,20 @@
+directive @merge(
+  keyField: String
+  keyArg: String
+  additionalArgs: String
+  key: [String!]
+  argsExpr: String
+) on FIELD_DEFINITION
+ 
+directive @canonical on OBJECT | INTERFACE | INPUT_OBJECT | UNION | ENUM | SCALAR | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+ 
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  age: Int
+}
+ 
+type Query {
+  users(ids: [ID!]!): [User]! @merge(keyField: "id") @canonical
+}

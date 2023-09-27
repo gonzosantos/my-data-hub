@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@graphql-hive/cli": "^0.29.0"
+  }
+}
