@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "test": "hive schema:publish --token 0b983f566363a896a3c78d5d5f2a60cf --service="test-schema" --url="http://fake.com/users/graphql" --author "Me" --commit "First-fake" ./schema.graphql"
+    "test": "hive schema:publish --token 0b983f566363a896a3c78d5d5f2a60cf --service='test-schema' --url='http://fake.com/users/graphql' --author 'Me' --commit 'First-fake' ./schema.graphql"
   },
   "dependencies": {
     "@graphql-hive/cli": "^0.29.0",
