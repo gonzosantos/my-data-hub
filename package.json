@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "test": "hive schema:publish ./schema.graphql --token foo"
+    "test": "hive schema:publish ./schema.graphql --token 0b983f566363a896a3c78d5d5f2a60cf"
   },
   "dependencies": {
-    "@graphql-hive/cli": "0.14.6",
+    "@graphql-hive/cli": "^0.29.0",
     "graphql": "16.5.0"
   }
 }
