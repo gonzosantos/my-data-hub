@@ -1,0 +1,9 @@
+pipeline_name: json_schema_ingestion
+source:
+  type: json-schema
+  config:
+    path: common.schema.json # e.g. https://json.schemastore.org/petstore-v1.0.json
+    platform: schemaregistry # e.g. schemaregistry
+    # platform_instance: <add a platform_instance if there are multiple schema repositories>
+    stateful_ingestion:
+      enabled: true # recommended to have this turned on
